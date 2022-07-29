@@ -79,3 +79,4 @@ CREATE TABLE trailer(
     link TEXT,
     FOREIGN KEY (id_movie) REFERENCES movie(id)
 );
+
