@@ -52,7 +52,7 @@ WHERE e.jobTitle LIKE '%Sales Rep%' AND o.city LIKE '%San Francisco%';
 SELECT c.*, COUNT(o.customerNumber) AS max_order
 FROM customers c
 INNER JOIN orders o ON c.customerNumber = o.customerNumber
-GROUP BY customerNumber
+GROUP BY o.customerNumber
 ORDER BY max_order DESC
 LIMIT 5;
     
